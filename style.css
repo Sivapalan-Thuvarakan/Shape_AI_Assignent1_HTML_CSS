@@ -1,0 +1,488 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* global */
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: rgb(59, 59, 59);
+    overflow-x: hidden;
+}
+
+section{
+    margin: 4rem 0;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F79f0e;
+    z-index: 9999;
+
+}
+
+.navbar__brand{
+    width: 100px;
+    margin-left: 0.5rem;
+}
+
+.brand__logo{
+    width: 100%;
+}
+
+.navbar__nav__items{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-right: 20px;
+}
+
+/* .hero__container{
+   margin-top: 1rem;
+} */
+
+.hero__image__container{
+    width: 100%;
+}
+
+.hero__image{
+    width: 100%;
+    right: auto;
+    left: auto;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+.hero__text{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: white;
+    font-weight: 900;
+}
+
+.food__list__container{
+    position: relative;
+    margin: 5rem 0;
+}
+
+.food__list__container__title{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+.food__menu__title{
+    text-align: center;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: black;
+}
+
+.food__menu__description{
+    color: white;
+    text-align: center;
+}
+
+.food__menu__card__list
+{
+    margin: 2rem 0rem;
+    width: 100%;
+}
+
+.food__menu__card__image{
+    border-radius: 60%;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+
+.food__list__view__more{
+    margin: 2rem 0;
+    transition: 0.3s;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #F79f0e;
+    text-align: center;
+    font-weight: 900;
+}
+
+.video__footage__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video__footage{
+    position: relative;
+}
+
+.video__footage::before{
+    background-image: linear-gradient(
+        to right,
+        #e2b265 0%,
+        #F79f0e 51%,
+        #e2b265 100%
+      );
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(1rem,1rem);
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+}
+
+.video__footage__description{
+    margin-top: 1.5rem;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.restaurant__competions__list__title{
+    margin: 2rem 0;
+    text-align: center;
+    color: #F79f0e;
+}
+
+.restaurant__competions__list__container{
+    margin: 3rem 0;
+}
+
+.restaurant__competitons__list_row1{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.restaurant__competitons__list_row2{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+.competitons1,.competitons3{
+    width: 200px;
+    height: 100px;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+.competitons2,.competitons4{
+    width: 150px;
+    height: 80px;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+.email__subcribe__container{
+    margin-top: 3rem;
+    width: 100%;
+    padding: 15px;
+    /* margin-right: auto;
+    margin-left: auto; */
+}
+
+.email__subcribe__input__field{
+    display: flex;
+    align-items: center;
+}
+
+.email__subcribe__container__title{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.email__input{
+    background-color: #e2bd80;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.quote__container{
+    width: 100%;
+    position: relative;
+}
+
+
+
+.quote__image__raw{
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+}
+
+.quote__image__text{
+    padding: 4.5rem 2rem;
+    color: white;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-image: linear-gradient(
+        to right,
+        #F79f0e 0%,
+        #F79f0e 51%,
+        #F79f0e 100%
+      );
+}
+
+.footer__logo{
+    width: 100px;
+    height: 50px;
+    filter: brightness(0) invert(1);
+}
+
+footer>ul{
+    color: black;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+footer >ul > li {
+    margin: 5px 0;
+}
+.button__primary{
+    /* background-image: linear-gradient(to right,black 0%,gray 51%,black 100%); */
+    margin: 5px;
+    padding: 0.3rem 0.3rem;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+  
+}
+
+.log_sign{
+    background-color: black;
+    color: white;
+}
+
+.order{
+    background-color: #F79f0e;
+    color: black;
+}
+
+.getupdate{
+    padding: 0.6rem;
+}
+
+@media(min-width: 768px){
+    .navbar{
+        padding: 0 2rem;
+    }
+
+    .navbar__nav__items{
+        margin-right: 0;
+    }
+
+    .video__footage__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+}
+
+@media(min-width: 1200px){
+    .navbar{
+        padding: 0rem 3rem;
+    }
+    .navbar__nav__items{
+        margin-right: 0;
+    }
+
+    .hero__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button__primary{
+        /* background-image: linear-gradient(to right,black 0%,gray 51%,black 100%); */
+        margin: 10px;
+        padding: 0.7rem 0.7rem;
+        text-align: center;
+        font-weight: 900;
+        border-radius: 6px;
+      
+    }
+
+    .hero__image{
+        margin-top: 2rem;
+        width: 80%;
+        height: 500px;
+        margin-left: 50px;
+    }
+    
+    .hero__text{
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 1200;
+    }
+
+    .food__menu__card__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    .food__list__container__title{
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: black;
+    }
+    
+    .food__menu__card__image{
+       border-radius: 100%;
+       width: 60%;
+       margin-left: 90px;
+    }
+
+    .food__list__view__more{
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        background: none;
+        cursor: pointer;
+        color: black;
+    }
+
+    .food__list__container{
+        position: relative;
+    }
+
+    .food__list__view__more:hover{
+        color: white;
+        background: #F79f0e;
+        cursor: pointer;
+        margin: 3rem 20rem;
+    }
+
+    .food__list__container__diagonal{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform: skewY(+3deg);
+        background-color: #c78a27;
+        /* background-image: linear-gradient(
+                                          to  right,
+                                          #e7a63e 0%,
+                                          #eea394 51%,
+                                          #e7a63e 100%); */
+        z-index: -3;
+    }
+
+    .video__footage__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video__footage__description{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .restaurant__competions__list__title{
+        font-size: 1.5rem;
+    }
+
+    .competitons1,.competitons3{
+        width: 270px;
+        height: 150px;
+        margin: 0 5px;
+        border-radius: 4px;
+    }
+    
+    .competitons2,.competitons4{
+        width: 230px;
+        height: 180px;
+        margin: 0 5px;
+        border-radius: 4px;
+    }
+
+    .restaurant__competions__list__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .restaurant__competitons__list_row1{
+        justify-content: center;
+    }
+    
+    .restaurant__competitons__list_row2{
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .email__subcribe__container{
+        display: flex;
+        justify-content: center; 
+    }
+
+    .email__input{
+        padding: 15px 140px 15px 0;
+    }
+
+    .email__subcribe__container__title{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .quote__image__raw{
+        width: 70%;
+        height: 400px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .quote__image__text{
+        padding: 150px;
+        font-size: 2rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-radius: 12px;
+        background-image: linear-gradient(
+            to right,
+            #F79f0e 0%,
+            #F79f0e 51%,
+            #F79f0e 100%
+          );
+    }
+    
+    .footer__logo{
+        width: 180px;
+        height: 80px;
+        filter: brightness(0) invert(1);
+    }
+}
