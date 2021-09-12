@@ -72,12 +72,13 @@ section{
     line-height: 2.25rem;
     color: white;
     font-weight: 900;
+    text-align: center;
 }
 
-.food__list__container{
-    position: relative;
-    margin: 5rem 0;
+#button__ordernow{
+    margin-left: 8.5rem;
 }
+
 
 .food__list__container__title{
     text-align: center;
@@ -228,6 +229,8 @@ section{
     position: absolute;
     width: 100%;
     z-index: -2;
+    border-radius: 5px;
+
 }
 
 .quote__image__text{
@@ -305,6 +308,87 @@ footer >ul > li {
         justify-content: space-between;
     
     }
+
+    #button__ordernow{
+        margin:3rem 0 0 8rem ;
+    }
+
+    .hero__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .food__menu__card__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .food__menu__card__image{
+        border-radius: 100%;
+        width:50%;
+        margin-left: 70px;
+     }
+
+     .food__list__view__more{
+        margin-top: 3rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        background: none;
+        cursor: pointer;
+        color: black;
+    }
+
+    .food__list__view__more:hover{
+        color: white;
+        background: #F79f0e;
+        cursor: pointer;
+        margin: 3rem 15rem;
+    }
+
+    .video__footage__description{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .restaurant__competions__list__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .email__subcribe__container{
+        display: flex;
+        justify-content: center; 
+    }
+
+    .quote__image__raw{
+        width: 90%;
+        height: 300px;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5px;
+    }
+
+    .quote__image__text{
+        padding: 100px;
+        font-size: 1.5rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 12px;
+        background-image: linear-gradient(
+            to right,
+            #F79f0e 0%,
+            #F79f0e 51%,
+            #F79f0e 100%
+          );
+    }
 }
 
 @media(min-width: 1200px){
@@ -315,11 +399,6 @@ footer >ul > li {
         margin-right: 0;
     }
 
-    .hero__container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     .button__primary{
         /* background-image: linear-gradient(to right,black 0%,gray 51%,black 100%); */
@@ -329,6 +408,10 @@ footer >ul > li {
         font-weight: 900;
         border-radius: 6px;
       
+    }
+
+    #button__ordernow{
+        margin:3rem 0 0 14rem ;
     }
 
     .hero__image{
@@ -343,11 +426,6 @@ footer >ul > li {
         line-height: 3rem;
         font-weight: 1200;
     }
-
-    .food__menu__card__list{
-        display: flex;
-        justify-content: space-between;
-    }
     
     
     .food__list__container__title{
@@ -357,7 +435,6 @@ footer >ul > li {
     }
     
     .food__menu__card__image{
-       border-radius: 100%;
        width: 60%;
        margin-left: 90px;
     }
@@ -365,10 +442,6 @@ footer >ul > li {
     .food__list__view__more{
         margin-top: 4rem;
         font-size: 1.5rem;
-        font-weight: 600;
-        background: none;
-        cursor: pointer;
-        color: black;
     }
 
     .food__list__container{
@@ -376,9 +449,6 @@ footer >ul > li {
     }
 
     .food__list__view__more:hover{
-        color: white;
-        background: #F79f0e;
-        cursor: pointer;
         margin: 3rem 20rem;
     }
 
@@ -404,7 +474,7 @@ footer >ul > li {
     }
 
     .video__footage__description{
-        margin-top: 1rem;
+        margin-top: 2rem;
         font-size: 1.5rem;
     }
 
@@ -427,9 +497,9 @@ footer >ul > li {
     }
 
     .restaurant__competions__list__container{
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+ 
     }
     
     .restaurant__competitons__list_row1{
@@ -441,10 +511,6 @@ footer >ul > li {
         justify-content: center;
     }
 
-    .email__subcribe__container{
-        display: flex;
-        justify-content: center; 
-    }
 
     .email__input{
         padding: 15px 140px 15px 0;
@@ -468,16 +534,7 @@ footer >ul > li {
     }
 
     footer{
-        display: flex;
-        flex-direction: row;
         justify-content: space-evenly;
-        border-radius: 12px;
-        background-image: linear-gradient(
-            to right,
-            #F79f0e 0%,
-            #F79f0e 51%,
-            #F79f0e 100%
-          );
     }
     
     .footer__logo{
